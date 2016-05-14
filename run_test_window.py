@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 import pygame
+import test_ui
 
 pygame.init()
 
 screen = pygame.display.set_mode((600, 600), pygame.RESIZABLE)
+
+UI = test_ui.init(screen)
 
 t = pygame.font.Font(None, 80)
 direct = 1
@@ -42,6 +45,7 @@ while True:
 			exit()  # lint:ok
 	screen.fill((0, 0, 0))
 	screen.blit(t_surf, t_rect)
+	UI.update()
 	pygame.display.flip()
 	move_dot(screen)
 
