@@ -91,7 +91,7 @@ class Text():
 			self._pos = pos
 		if self.status == 0:
 			self.status = 3
-	
+
 	def get_pos(self):
 		return self._pos
 
@@ -102,4 +102,19 @@ class Text():
 		pass
 
 	def mouse_over(self):
+		pass
+
+	def mouse_enter(self):
+		pass
+
+	def mouse_leave(self):
+		pass
+
+	def mouse_clicked(self, buttons):
+		pass
+
+	def mouse_down(self, buttons):
+		pass
+
+	def mouse_up(self, released_buttons):
 		pass
