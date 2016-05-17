@@ -118,3 +118,22 @@ class Text():
 
 	def mouse_up(self, released_buttons):
 		pass
+
+
+class Panel():
+
+	def __init__(self, **kwargs):
+		self._layer = 0
+		self._pos = (0, 0)
+		self._color = (255, 255, 255)
+		self._align = "center"
+		self._antialias = True
+		self._image = None
+		self.status = 2
+		self._generate_font()
+		self._render_text()
+		self._generate_rect()
+		self.start(kwargs)
+
+	def start(kwarg):
+		pass
